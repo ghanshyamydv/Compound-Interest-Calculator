@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest</title>
+    <link rel="stylesheet" href="interest.css">
+</head>
+<body>
+ <form action='./result.html' target="_self">
+    <div class="container">
+        <h2>चक्रिय ब्याज निकाल्नुहोस</h2>
+        <div class="date-container">
+            <div class="loan-taken">
+                <p>रकम लिएको मिति</p>
+                <div class="input-container">
+                    <label for="">साल</label>
+                    <label for="">महिना</label>
+                    <label for="">गते</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" name="takenyear" class="takenyear">
+                    <input type="number" name="takenmonth" class="takenmonth">
+                    <input type="number" name="takenday" class="takenday">
+                </div>
+                
+            </div>
+            <div class="loan-returning">
+                <p>रकम भुझाउने मिति</p>
+                <div class="input-container">
+                    <label for="">साल</label>
+                    <label for="">महिना</label>
+                    <label for="">गते</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" name="returnyear" class="returnyear">
+                    <input type="number" name="returnmonth" class="returnmonth">
+                    <input type="number" name="returnday" class="returnday">
+                </div>
+            </div>
+            <div class="loan-amount">
+                <div class="input-container">
+                    <label>मूलधन</label>
+                    <label>ब्याज दर</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" name="principle" class="amt amount">
+                    <input type="number" name="rate" class="amt rate">
+                </div>
+            </div>
+        </div>
+        <button>जोडनुहोस</button>
+        <p class="note">ब्याजदरमा प्रति महिना लागने ब्यजप्रतिशत लेख्नुहोला</p>
+    </div>
+</form>
+<script src="interest.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    color: white;
+   margin: 10px;
+}
+.container{
+    background-color: rgb(72, 72, 225);
+    width:500px;
+    height: 650px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.loan-taken{
+    background-color: rgb(137, 185, 137);
+    padding: 10px;
+}
+.loan-returning{
+    background-color: rgb(231, 135, 248);
+    padding: 10px;
+}
+.loan-amount{
+    background-color: rgb(149, 156, 247);
+    padding: 10px;
+}
+
+.input-container{
+    display: flex;
+}
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+    color: rgb(255, 44, 220);
+    border: none;
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px;
+    background-color: #ffffff00;
+    border: none;
+    border-bottom: 2px solid black;
+}
+label{
+    font-size: 20px;
+}
+.note{
+    font-size: 20px;
+    color: rgb(255, 44, 220);
+    padding: 20px;
+}
