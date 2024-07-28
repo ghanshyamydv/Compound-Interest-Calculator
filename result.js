@@ -11,7 +11,7 @@ window.addEventListener('load',()=>{
 
     let principle=params.get("principle");
     let rate=params.get("rate");
-
+    // console.log(typeof rate);
     //calculating year
     let year=parseInt(returnyear)-parseInt(takenyear);
     let month=0;
@@ -34,7 +34,7 @@ window.addEventListener('load',()=>{
     }
 
     let pvalue=parseInt(principle);
-    let r=parseInt(rate);
+    let r=parseFloat(rate);
 
     let p=pvalue;
     for(let i=year;i>=1;i--){
@@ -57,7 +57,7 @@ window.addEventListener('load',()=>{
     let returndate=document.querySelector('.return');
     returndate.innerHTML=`रकम भुझाउने मिति : <span>${returnyear}</span> साल <span>${returnmonth}</span> महिना <span>${returnday}</span> गते`;
     let takendate=document.querySelector('.borrow');
-    takendate.innerHTML=`रकम भुझाउने मिति : <span>${takenyear}</span> साल <span>${takenmonth}</span> महिना <span>${takenday}</span> गते`
+    takendate.innerHTML=`रकम लिएको मिति : <span>${takenyear}</span> साल <span>${takenmonth}</span> महिना <span>${takenday}</span> गते`
     let pr=document.querySelector('.pr');
     pr.innerHTML=`मूलधन : रु <span>${principle}</span>`
     let prrate=document.querySelector('.rate');
